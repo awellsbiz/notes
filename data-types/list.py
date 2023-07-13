@@ -75,3 +75,4 @@ nums_list = [3, 6, 9, 12, 15, 18]
 nums_list.clear()
 print(nums_list)
 # output: []
+
