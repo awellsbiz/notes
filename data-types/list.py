@@ -34,3 +34,22 @@ nums_list = [3, 6, 9, 15]
 nums_list.insert(3, 12)
 print(nums_list)
 # output: [3, 6, 9, 12, 15]
+
+# APPEND
+"""
+list.append(item) - always adds items (strings, numbers, lists) at the end of the list
+"""
+nums_list = [3, 6, 9, 12, 15]
+nums_list.append(18)
+print(nums_list)
+# output: [3, 6, 9, 12, 15, 18]
+
+# EXTEND
+"""
+list.extend(item) - adds iterable items (lists, tuples, strings) to the end of the list
+"""
+nums_list = [3, 6, 9, 12, 15, 18]
+nums_list_extended = [21, 24, 27, 30]
+nums_list.extend(nums_list_extended)
+print(nums_list)
+# output: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
