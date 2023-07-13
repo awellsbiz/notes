@@ -162,3 +162,27 @@ list[starting index: upto index: step]
 nums_list = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 nums_list[1:len(nums_list):2]
 # output: [6, 12, 18, 24, 30]
+
+
+### MISC
+# populating an empty list using for loop and append()
+
+# Okay:
+def square_area(side_length):
+     result = []
+     for length in side_length:
+         result.append(length*length)
+     return result
+
+
+lengths = [1, 4, 9, 20]
+print(square_area(lengths))
+# output: [1, 16, 81, 400]dex: upto index: step]
+
+# Better:
+def square_area(side_length):
+     return [length*length for length in side_length]
+
+lengths = [1, 4, 9, 20]
+print(square_area(lengths))
+# output: [1, 16, 81, 400]
