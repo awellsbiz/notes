@@ -63,3 +63,37 @@ stk.push(2)
 stk.push(3)
 print(stk)
 # output: [1, 2, 3]
+
+# PEEK
+"""
+Algorithm
+1. START
+2. return the element at the top of the stack
+3. END
+"""
+
+class Stack:
+    def __init__(self):
+      self.stack = []
+    def push(self, data):
+        if data not in self.stack:
+         self.stack.append(data)
+         return True
+        else:
+         return False
+    def pop(self):
+        if len(self.stack) <= 0:
+            print("No element in the Stack")
+        else:
+            return self.stack.pop()
+    def peek(self):
+      return self.stack[-1]
+
+stk = Stack()
+stk.push(1)
+stk.push(2)
+stk.push(3)
+print(stk)
+# output: [1, 2, 3]
+print("topmost element: ",stk.peek())
+#topmost element:  3
