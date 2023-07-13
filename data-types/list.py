@@ -25,3 +25,12 @@ nums_list.index(6, 5)
 # output: 6
 nums_list.index(6, 2, 5)
 # output: 3
+
+# INSERT
+"""
+list.insert(index, element) - inserts a single element anywhere in the list
+"""
+nums_list = [3, 6, 9, 15]
+nums_list.insert(3, 12)
+print(nums_list)
+# output: [3, 6, 9, 12, 15]
