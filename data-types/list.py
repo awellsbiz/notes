@@ -154,3 +154,11 @@ print(nums)
 # output: [3, 6, 9, 12, 15, 18]
 print(nums_copy)
 # output: [3, 6, 9, 12, 15, 18]
+
+# SLICING
+"""
+list[starting index: upto index: step]
+"""
+nums_list = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+nums_list[1:len(nums_list):2]
+# output: [6, 12, 18, 24, 30]
