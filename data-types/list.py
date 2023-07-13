@@ -76,3 +76,62 @@ nums_list.clear()
 print(nums_list)
 # output: []
 
+# REMOVE
+"""
+list.remove(x) - removes the first item from the list whose value is equal to `x`. It throws a `ValueError` if there is no such item
+"""
+nums_list = [3, 6, 9, 12, 15, 18]
+nums_list.remove(15)
+print(nums_list)
+# output: [3, 6, 9, 12, 18]
+
+# COUNT
+"""
+list.count(x) - returns the amount of instances of a given value x.
+"""
+nums_list = [3, 6, 9, 12, 15, 18, 3, 6, 9, 12, 15, 18, 3, 6, 9]
+nums_list.count(15)
+# output: 2
+nums_list.count(9)
+# output: 3
+
+# SORT
+"""
+list.sort() - sorts the items of the list in place. sort(key=..., reverse=...) arguments can be used for sort customizations
+"""
+nums_list = [15, 9, 6, 3, 12, 18]
+nums_list.sort()
+print(nums_list)
+# output: [3, 6, 9, 12, 18]
+
+#sorting using reverse=True (false by default)
+nums_list = [15, 9, 6, 3, 12, 18]
+nums_list.sort(reverse=True)
+print(nums_list)
+#output: [18, 15, 12, 9, 6, 3]
+
+# sorting using custom key
+employees = [
+    {'Name': 'Alan Turing', 'age': 25},
+    {'Name': 'Sharon Lin', 'age': 30},
+    {'Name': 'John Hopkins', 'age': 18},
+    {'Name': 'Mikhail Tal', 'age': 40},
+]
+
+# custom functions to get employee info
+def get_name(employee):
+    return employee.get('Name')
+
+
+def get_age(employee):
+    return employee.get('age')
+
+
+# sort by name
+[{'Name': 'Alan Turing', 'age': 25}, {'Name': 'John Hopkins', 'age': 18}, {'Name': 'Mikhail Tal', 'age': 40}, {'Name': 'Sharon Lin', 'age': 30}][{'Name': 'Alan Turing', 'age': 25}, {'Name': 'John Hopkins', 'age': 18}, {'Name': 'Mikhail Tal', 'age': 40}, {'Name': 'Sharon Lin', 'age': 30}]
+# output: [{'Name': 'Alan Turing', 'age': 25}, {'Name': 'John Hopkins', 'age': 18}, {'Name': 'Mikhail Tal', 'age': 40}, {'Name': 'Sharon Lin', 'age': 30}]
+
+# sort by Age
+employees.sort(key=get_age)
+print(employees, end='\n\n')
+# output: [{'Name': 'John Hopkins', 'age': 18}, {'Name': 'Alan Turing', 'age': 25}, {'Name': 'Sharon Lin', 'age': 30}, {'Name': 'Mikhail Tal', 'age': 40}]
