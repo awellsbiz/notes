@@ -104,7 +104,7 @@ nums_list.sort()
 print(nums_list)
 # output: [3, 6, 9, 12, 18]
 
-#sorting using reverse=True (false by default)
+# sorting using reverse=True (false by default)
 nums_list = [15, 9, 6, 3, 12, 18]
 nums_list.sort(reverse=True)
 print(nums_list)
@@ -122,10 +122,8 @@ employees = [
 def get_name(employee):
     return employee.get('Name')
 
-
 def get_age(employee):
     return employee.get('age')
-
 
 # sort by name
 [{'Name': 'Alan Turing', 'age': 25}, {'Name': 'John Hopkins', 'age': 18}, {'Name': 'Mikhail Tal', 'age': 40}, {'Name': 'Sharon Lin', 'age': 30}][{'Name': 'Alan Turing', 'age': 25}, {'Name': 'John Hopkins', 'age': 18}, {'Name': 'Mikhail Tal', 'age': 40}, {'Name': 'Sharon Lin', 'age': 30}]
@@ -136,3 +134,11 @@ employees.sort(key=get_age)
 print(employees, end='\n\n')
 # output: [{'Name': 'John Hopkins', 'age': 18}, {'Name': 'Alan Turing', 'age': 25}, {'Name': 'Sharon Lin', 'age': 30}, {'Name': 'Mikhail Tal', 'age': 40}]
 
+# REVERSE
+"""
+list.reverse() - reverse the elements of the list in place
+"""
+nums_list = [3, 6, 9, 12, 15, 18]
+nums_list.reverse()
+print(nums_list)
+# output: [18, 15, 12, 9, 6, 3]
