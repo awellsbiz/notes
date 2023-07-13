@@ -142,3 +142,15 @@ nums_list = [3, 6, 9, 12, 15, 18]
 nums_list.reverse()
 print(nums_list)
 # output: [18, 15, 12, 9, 6, 3]
+
+# COPY
+"""
+list.copy() or list[:] - returns a shallow copy of the list
+"""
+nums_list = [3, 6, 9, 12, 15, 18]
+nums = nums_list.copy()
+nums_copy = nums_list[:]
+print(nums)
+# output: [3, 6, 9, 12, 15, 18]
+print(nums_copy)
+# output: [3, 6, 9, 12, 15, 18]
