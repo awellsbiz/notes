@@ -1,5 +1,5 @@
 """
-A stack is an Abstract Data Type (ADT), that is popularly used in most programming languages. It is named stack because it has the similar operations as the real-world stacks, for example – a pack of cards or a pile of plates, etc.
+A stack is an Abstract Data Type (ADT), that is popularly used in most programming languages. It is named stack because it has the similar operations as the real-world stacks, for example... a pack of cards or a pile of plates, etc.
 
 The stack follows the LIFO (Last in - First out) structure where the last element inserted would be the first element deleted.
 
@@ -40,11 +40,11 @@ print(stk)
 # POP
 """
 Algorithm
-1 − Checks if the stack is full.
-2 − If the stack is full, produces an error and exit.
-3 − If the stack is not full, increments top to point next empty space.
-4 − Adds data element to the stack location, where top is pointing.
-5 − Returns success.
+1 Checks if the stack is full.
+2 If the stack is full, produces an error and exit.
+3 If the stack is not full, increments top to point next empty space.
+4 Adds data element to the stack location, where top is pointing.
+5 Returns success.
 """
 
 class Stack:
@@ -67,9 +67,9 @@ print(stk)
 # PEEK
 """
 Algorithm
-1. START
-2. return the element at the top of the stack
-3. END
+1 START
+2 return the element at the top of the stack
+3 END
 """
 
 class Stack:
@@ -101,9 +101,9 @@ print("topmost element: ",stk.peek())
 # isFull
 """
 Algorithm
-1. START
-2. return the element at the top of the stack
-3. END
+1 START
+2 return the element at the top of the stack
+3 END
 """
 
 class Stack:
@@ -135,9 +135,9 @@ print("topmost element: ",stk.peek())
 # isEMPTY
 """
 Algorithm
-1. START
-2. return the element at the top of the stack
-3. END
+1 START
+2 return the element at the top of the stack
+3 END
 """
 
 class Stack:
