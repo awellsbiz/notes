@@ -66,3 +66,12 @@ nums_list = [3, 6, 9, 12, 15]
 nums_list.pop(2)
 print(nums_list)
 nums_list = [3, 6, 12, 15]
+
+# CLEAR
+"""
+list.clear() - removes all items from list
+"""
+nums_list = [3, 6, 9, 12, 15, 18]
+nums_list.clear()
+print(nums_list)
+# output: []
