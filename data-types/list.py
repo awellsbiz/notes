@@ -53,3 +53,16 @@ nums_list_extended = [21, 24, 27, 30]
 nums_list.extend(nums_list_extended)
 print(nums_list)
 # output: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+
+# POP
+"""
+list.pop(index) - deletes the last item of the list. If there is no item in the list, an IndexError will be thrown
+"""
+nums_list = [3, 6, 9, 12, 15, 18]
+nums_list.pop()
+print(nums_list)
+# output: [3, 6, 9, 12, 15]
+nums_list = [3, 6, 9, 12, 15]
+nums_list.pop(2)
+print(nums_list)
+nums_list = [3, 6, 12, 15]
