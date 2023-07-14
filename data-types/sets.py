@@ -65,5 +65,21 @@ print(memory)
 
 # UPDATE
 """
-
+Updates a set with the union of itself and others
 """
+murphy = set("murphy")
+andrew = set("andrew")
+kate = set("kate")
+murphy.update(andrew, kate)
+print(murphy)
+# output: {'t', 'h', 'k', 'm', 'p', 'e', 'y', 'n', 'u', 'd', 'r', 'a', 'w'}
+
+# UNION
+"""
+Returns the union of sets in a new set
+"""
+a = set("abc")
+b = set("def")
+print(a.union(b))
+# output: {'b', 'a', 'd', 'e', 'c', 'f'}
+
