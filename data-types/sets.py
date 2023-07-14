@@ -83,3 +83,12 @@ b = set("def")
 print(a.union(b))
 # output: {'b', 'a', 'd', 'e', 'c', 'f'}
 
+# DIFFERENCE
+"""
+Returns the difference of two or more sets as a new set
+"""
+a = set("abcdefg")
+b = set("def")
+c = set("cg")
+print(a.difference(b, c))
+# output: {'b', 'a'}
