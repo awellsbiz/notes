@@ -35,3 +35,35 @@ andrew = set("andrew")
 andrew.remove('w')
 print(andrew)
 # output: {'a', 'd', 'n', 'e', 'r'}
+
+# CLEAR
+"""
+Removes all elements from a set
+"""
+murphy = set("murphy")
+murphy.clear()
+print(murphy)
+# output: set()
+
+# COPY
+"""
+Returns a shallow copy of a set
+"""
+snack = set("cookies")
+cookies = snack.copy()
+print(cookies)
+# output: {'i', 'e', 's', 'k', 'o', 'c'}
+
+# POP
+"""
+Removes and returns an arbitrary set element. Raise KeyError if the set is empty
+"""
+memory = set("memory")
+memory.pop()
+print(memory)
+# output: {'m', 'y', 'e', 'r'}
+
+# UPDATE
+"""
+
+"""
