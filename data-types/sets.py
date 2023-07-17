@@ -103,3 +103,11 @@ c =set({"orange"})
 a.difference_update(b, c)
 print(a)
 # output: {'berry'}
+
+# DISCARD
+"""
+Removes an element from set if it is a member. (Do nothing if the element is not in set)
+"""
+a = set({'apple', 'orange', 'berry'})
+a.discard('orange')
+print(a)
