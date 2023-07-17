@@ -143,3 +143,14 @@ print(a.isdisjoint(b))
 # output: False
 print(a.isdisjoint(c))
 # output: True
+
+# ISSUBSET
+"""
+Returns True if another set contains this set
+"""
+a = set({'apple', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+print(a.issubset(b))
+# output: True
+print(b.issubset(a))
+# output: False
