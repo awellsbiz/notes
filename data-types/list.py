@@ -26,6 +26,14 @@ nums_list.index(6, 5)
 nums_list.index(6, 2, 5)
 # output: 3
 
+# EMPTY LISTS ARE FALSY
+nums_list = [3, 6, 9]
+print(bool(nums_list))
+# output: True
+empty_list = []
+print(bool(empty_list))
+# output: False
+
 # INSERT
 """
 list.insert(index, element) - inserts a single element anywhere in the list
