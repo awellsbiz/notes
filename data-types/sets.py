@@ -111,3 +111,14 @@ Removes an element from set if it is a member. (Do nothing if the element is not
 a = set({'apple', 'orange', 'berry'})
 a.discard('orange')
 print(a)
+
+# INTERSECTION
+"""
+Returns the intersection of two sets as a new set
+"""
+a = set({'apple', 'orange', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+print(a.intersection(b))
+# output: {'apple', 'berry'}
+
+
