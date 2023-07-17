@@ -131,3 +131,15 @@ a.intersection_update(b)
 print("Intersection update")
 print(a)
 # output: {'berry', 'apple'}
+
+# ISDISJOINT
+"""
+Returns True if two sets have a null intersection
+"""
+a = set({'apple', 'orange', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+c = set({'ice cream'})
+print(a.isdisjoint(b))
+# output: False
+print(a.isdisjoint(c))
+# output: True
