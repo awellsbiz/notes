@@ -93,3 +93,13 @@ c = set("cg")
 print(a.difference(b, c))
 # output: {'b', 'a'}
 
+# DIFFERENCE_UPDATE
+"""
+Removes all elements of another set from this set
+"""
+a = set({'apple', 'orange', 'berry'})
+b = set({"apple"})
+c =set({"orange"})
+a.difference_update(b, c)
+print(a)
+# output: {'berry'}
