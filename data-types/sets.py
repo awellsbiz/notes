@@ -165,3 +165,22 @@ print(a.issuperset(b))
 # output: False
 print(b.issuperset(a))
 # output: True
+
+# SYMMETRIC_DIFFERENCE
+"""
+Returns the symmetric difference of two sets as a new set
+"""
+a = set({'apple', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+print(a.symmetric_difference(b))
+# output: {'pie'}
+
+# SYMMETRIC_DIFFERENCE_UPDATE
+"""
+Updates a set with the symmetric difference of itself and another
+"""
+a = set({'apple', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+a.symmetric_difference_update(b)
+print(a)
+# output: {'pie'}
