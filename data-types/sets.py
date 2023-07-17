@@ -121,4 +121,13 @@ b = set({'apple', 'berry', 'pie'})
 print(a.intersection(b))
 # output: {'apple', 'berry'}
 
-
+# INTERSECTION_UPDATE
+"""
+Updates the set with the intersection of itself and another
+"""
+a = set({'apple', 'orange', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+a.intersection_update(b)
+print("Intersection update")
+print(a)
+# output: {'berry', 'apple'}
