@@ -154,3 +154,14 @@ print(a.issubset(b))
 # output: True
 print(b.issubset(a))
 # output: False
+
+# ISSUPERSET
+"""
+Returns True if this set contains another set
+"""
+a = set({'apple', 'berry'})
+b = set({'apple', 'berry', 'pie'})
+print(a.issuperset(b))
+# output: False
+print(b.issuperset(a))
+# output: True
