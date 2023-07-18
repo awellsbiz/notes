@@ -52,3 +52,16 @@ def twoSum(nums_list, target):
 nums_list = [4, 3, 6, 1, 2]
 target = 6
 print(twoSum(nums_list, target))
+
+# Reverse array
+def reverseArray(array):
+    start, end = 0, len(array) - 1
+    while start < end:
+        array[start], array[end] = array[end], array[start]
+        start += 1
+        end -= 1
+
+array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+reverseArray(array)
+print(array)
+# output: [50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
