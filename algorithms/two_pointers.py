@@ -7,6 +7,19 @@ When might we use it?
 Problems that involve collections such as arrays or lists, when we have to analyze each element of the collection compared to its other elements. 
 """
 
+# REVERSE ARRAY EXAMPLE
+def reverseArray(array):
+    start, end = 0, len(array) - 1
+    while start < end:
+        array[start], array[end] = array[end], array[start]
+        start += 1
+        end -= 1
+
+array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+reverseArray(array)
+print(array)
+# output: [50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
+
 # TWO SUM EXAMPLE
 """
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -52,16 +65,3 @@ def twoSum(nums_list, target):
 nums_list = [4, 3, 6, 1, 2]
 target = 6
 print(twoSum(nums_list, target))
-
-# Reverse array
-def reverseArray(array):
-    start, end = 0, len(array) - 1
-    while start < end:
-        array[start], array[end] = array[end], array[start]
-        start += 1
-        end -= 1
-
-array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-reverseArray(array)
-print(array)
-# output: [50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
