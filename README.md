@@ -1,1 +1,1 @@
-Andrew's notes
+Notes on data types, data structures, and algorithms in Python3.
