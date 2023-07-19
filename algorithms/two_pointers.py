@@ -85,8 +85,8 @@ def sortedSquares(nums):
     return res
 
 
-sortedSquares([-4,-3,0,2,6,9])
-
+print(sortedSquares([-4,-3,0,2,6,9]))
+# output: [0, 4, 9, 16, 36, 81]
 
 
 
