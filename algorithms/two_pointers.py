@@ -20,6 +20,7 @@ reverseArray(array)
 print(array)
 # output: [50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
 
+
 # TWO SUM EXAMPLE
 """
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -65,3 +66,28 @@ def twoSum(nums_list, target):
 nums_list = [4, 3, 6, 1, 2]
 target = 6
 print(twoSum(nums_list, target))
+
+# Given an integer array sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+
+def sortedSquares(nums):
+    n = len(nums)
+    start, end = 0, n-1
+    res = [0]*n
+    i = n-1
+    while end > -1 and i > -1:
+        if abs(nums[start]) > abs(nums[end]):
+            res[i] = nums[start] * nums[start]
+            start += 1
+        else:
+            res[i] = nums[end] * nums[end]
+            end -= 1
+        i -= 1
+    return res
+
+
+sortedSquares([-4,-3,0,2,6,9])
+
+
+
+
+
