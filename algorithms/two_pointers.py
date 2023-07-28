@@ -91,3 +91,19 @@ print(sortedSquares([-4,-3,0,2,6,9]))
 
 
 
+# Giiven an integer array sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+
+# input: [-4, -1, 0, 3, 10]
+# output: [0, 1, 9, 16, 100]
+
+def sorted_squares(nums):
+    #square each number
+    squares_nums = [num**2 for num in nums]
+    #sort the numbers
+    squares_nums.sort()
+    return squares_nums
+
+input = [-4, -1, 0, 3, 10]
+output = sorted_squares(input)
+print(output)
+   
