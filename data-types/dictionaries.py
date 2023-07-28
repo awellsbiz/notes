@@ -1,7 +1,15 @@
+person_dict = {
+    'name': 'John',
+    'age': 30,
+    'occupation': 'Engineer'
+}
+print(person_dict['name'])  
+# output: 'John'
 
-
-dict = {}
 # methods
 dict.values()
 
 dict.items()
+
+
+
