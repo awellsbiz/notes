@@ -1,4 +1,6 @@
-
+"""
+Objects (instances of classes) are more powerful and customizable data structures, allowing you to define complex data structures and behaviors to suit your specific requirements.
+"""
 
 class Person:
     def __init__(self, name, age, occupation):
