@@ -1,3 +1,7 @@
+"""
+Dictionaries are great for simple key-value storage and retrieval, especially when the keys are known and limited.
+"""
+
 person_dict = {
     'name': 'John',
     'age': 30,
