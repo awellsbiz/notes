@@ -91,7 +91,7 @@ print(sortedSquares([-4,-3,0,2,6,9]))
 
 
 
-# Giiven an integer array sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+# Given an integer array sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
 # input: [-4, -1, 0, 3, 10]
 # output: [0, 1, 9, 16, 100]
